@@ -1,10 +1,13 @@
 import React from 'react'
+import { Container } from 'react-bootstrap';
+import ListMotorcycles from '../components/ListMotorcycles';
 
 const App = () => {
   return (
-    <div>
-        <h1>hola</h1>
-    </div>
+    <Container fluid>
+        <h1 className="text-center">Lista de Motos</h1>
+        <ListMotorcycles></ListMotorcycles>
+    </Container>
   )
 }
 

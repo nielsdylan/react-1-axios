@@ -40,46 +40,46 @@ const NewMotorcycle = () => {
 
   return (
     <Container>
-      <h1 className="text-center">Nueva moto</h1>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3">
-          <Form.Control type='text' name='reference' placeholder='Ingrese su referencia...'  value={data.reference} onChange={handleChange} required ></Form.Control>
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Control type='text' name='model' placeholder='Ingrese su model...'  value={data.model} onChange={handleChange} required ></Form.Control>
-        </Form.Group>
-        {/* <Form.Group className="mb-3">
-          <Form.Control type='text' name='trademark' placeholder='Ingrese su trademark...'  value={data.trademark} onChange={handleChange} ></Form.Control>
-        </Form.Group> */}
-        <Form.Group className="mb-3">
-          <Form.Control type='number' name='price' placeholder='Ingrese su price...'  value={data.price} onChange={handleChange} required></Form.Control>
-        </Form.Group>
-        <Form.Group className="mb-3"> 
-          <Form.Control type='text' name='image' placeholder='Ingrese su image...'  value={data.image} onChange={handleChange} required></Form.Control>
-        </Form.Group>
-        {/* <Form.Group className="mb-3"> 
-          <Form.Select onChange={handleChange} name='trademark' value={data.trademark}>
-            <option value="">MARCA...</option>
-            <option value="YAMAHA">YAMAHA</option>
-            <option value="SUZUKI">SUZUKI</option>
-            <option value="HONDA">HONDA</option>
-          </Form.Select>
-        </Form.Group> */}
+        <h1 className="text-center">Nueva moto</h1>
+        <Form onSubmit={handleSubmit}>
+            <Form.Group className="mb-3">
+                <Form.Control type='text' name='reference' placeholder='Ingrese su referencia...'  value={data.reference} onChange={handleChange} required ></Form.Control>
+            </Form.Group>
+            <Form.Group className="mb-3">
+                <Form.Control type='text' name='model' placeholder='Ingrese su model...'  value={data.model} onChange={handleChange} required ></Form.Control>
+            </Form.Group>
+            {/* <Form.Group className="mb-3">
+              <Form.Control type='text' name='trademark' placeholder='Ingrese su trademark...'  value={data.trademark} onChange={handleChange} ></Form.Control>
+            </Form.Group> */}
+            <Form.Group className="mb-3">
+                <Form.Control type='number' name='price' placeholder='Ingrese su price...'  value={data.price} onChange={handleChange} required></Form.Control>
+            </Form.Group>
+            <Form.Group className="mb-3"> 
+                <Form.Control type='text' name='image' placeholder='Ingrese su image...'  value={data.image} onChange={handleChange} required></Form.Control>
+            </Form.Group>
+            {/* <Form.Group className="mb-3"> 
+              <Form.Select onChange={handleChange} name='trademark' value={data.trademark}>
+                <option value="">MARCA...</option>
+                <option value="YAMAHA">YAMAHA</option>
+                <option value="SUZUKI">SUZUKI</option>
+                <option value="HONDA">HONDA</option>
+              </Form.Select>
+            </Form.Group> */}
 
-        <Form.Group className="mb-3"> 
-          <select 
-            className='form-control' 
-            onChange={handleChange} 
-            name="trademark" required
-          >
-            <option value="">Seleccione una opcion...</option>
-            <option value="YAMAHA">YAMAHA</option>
-            <option value="SUZUKI">SUZUKI</option>
-            <option value="HONDA">HONDA</option>
-          </select>
-        </Form.Group>
-        <button className="btn btn-success" type="submit" >Guardar</button>
-      </Form>
+            <Form.Group className="mb-3"> 
+              <select 
+                className='form-control' 
+                onChange={handleChange} 
+                name="trademark" required
+              >
+                <option value="">Seleccione una opcion...</option>
+                <option value="YAMAHA">YAMAHA</option>
+                <option value="SUZUKI">SUZUKI</option>
+                <option value="HONDA">HONDA</option>
+              </select>
+            </Form.Group>
+            <button className="btn btn-success" type="submit" >Guardar</button>
+        </Form>
     </Container>
   )
 }

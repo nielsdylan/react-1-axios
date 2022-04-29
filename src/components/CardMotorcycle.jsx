@@ -4,7 +4,7 @@ import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import "./styles/styles.css";
 
-const CardMotorcycle = ({motorcycle, setUpdateList, updateList}) => {
+const CardMotorcycle = ({motorcycle, setUpdateList, updateList,handleCloseModal,handleOpenModal,setDataModal}) => {
   const URL = "http://127.0.0.1:8000/api/moto/delete";
 
   const handleDelete = async () =>{
@@ -40,7 +40,8 @@ const CardMotorcycle = ({motorcycle, setUpdateList, updateList}) => {
   }
 
   const handleEdit = () => {
-    console.log('editar');
+    handleOpenModal();
+    setDataModal(motorcycle);
   }
 
   return (
